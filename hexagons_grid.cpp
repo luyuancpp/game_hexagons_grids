@@ -1,5 +1,7 @@
 // Generated code -- CC0 -- No Rights Reserved -- http://www.redblobgames.com/grids/hexagons/
 
+#include "hexagons_grid.h"
+
 #include <cmath>
 #include <cstdlib>
 #include <vector>
@@ -12,7 +14,7 @@ using std::vector;
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
 #endif
-
+/*
 struct Point
 {
     const double x;
@@ -81,7 +83,7 @@ struct Layout
     const Point origin;
     Layout(Orientation orientation_, Point size_, Point origin_) : orientation(orientation_), size(size_), origin(origin_) {}
 };
-
+*/
 
 // Forward declarations
 
@@ -285,8 +287,8 @@ Hex rdoubled_to_cube(DoubledCoord h)
 
 
 
-const Orientation layout_pointy = Orientation(sqrt(3.0), sqrt(3.0) / 2.0, 0.0, 3.0 / 2.0, sqrt(3.0) / 3.0, -1.0 / 3.0, 0.0, 2.0 / 3.0, 0.5);
-const Orientation layout_flat = Orientation(3.0 / 2.0, 0.0, sqrt(3.0) / 2.0, sqrt(3.0), 2.0 / 3.0, 0.0, -1.0 / 3.0, sqrt(3.0) / 3.0, 0.0);
+//const Orientation layout_pointy = Orientation(sqrt(3.0), sqrt(3.0) / 2.0, 0.0, 3.0 / 2.0, sqrt(3.0) / 3.0, -1.0 / 3.0, 0.0, 2.0 / 3.0, 0.5);
+//const Orientation layout_flat = Orientation(3.0 / 2.0, 0.0, sqrt(3.0) / 2.0, sqrt(3.0), 2.0 / 3.0, 0.0, -1.0 / 3.0, sqrt(3.0) / 3.0, 0.0);
 Point hex_to_pixel(Layout layout, Hex h)
 {
     Orientation M = layout.orientation;
